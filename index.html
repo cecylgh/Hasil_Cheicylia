@@ -11,7 +11,7 @@
     // Your access token can be found at: https://ion.cesium.com/tokens.
     // This is the default access token from your ion account
 
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZGNhODIwNS0zZTVlLTQzZTQtYTU3ZS03ZTRhY2VkN2UzODUiLCJpZCI6MTgwMDYyLCJpYXQiOjE3MDA2Njk0NDF9.L5P8OlKo0o6DkN5wooPF-LiBU-BR2W7IPWdThnG_mQU';
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ZmNlMGNiMS1lNTY1LTQxZDItYTQwMS1mNTRmZTY1ZmQwYmMiLCJpZCI6MTgzNzA2LCJpYXQiOjE3MDIyODQ5MjB9.RIb3d3HlMJpXJLLf6FAYJM2iFzQ07wyNmhvT-savLyI';
 
     // STEP 4 CODE (replaces steps 2 and 3)
     // Keep your `Cesium.Ion.defaultAccessToken = 'your_token_here'` line from before here. 
@@ -25,7 +25,7 @@
     //viewer.scene.primitives.add(osmBuildings);
 
     const tileset = viewer.scene.primitives.add(
-    await Cesium.Cesium3DTileset.fromIonAssetId(2384574)
+    await Cesium.Cesium3DTileset.fromIonAssetId(2386188)
     );
 
 
@@ -77,7 +77,7 @@
     // STEP 6 CODE (airplane entity)
     async function loadModel() {
       // Load the glTF model from Cesium ion.
-      const airplaneUri = await Cesium.IonResource.fromAssetId(2384637);
+      const airplaneUri = await Cesium.IonResource.fromAssetId(2386189);
       const airplaneEntity = viewer.entities.add({
         availability: new Cesium.TimeIntervalCollection([ new Cesium.TimeInterval({ start: start, stop: stop }) ]),
         position: positionProperty,
